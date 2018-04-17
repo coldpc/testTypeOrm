@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const crypto = require('../../utils/crypto');
+const crypto = require('../../utils/SkCrypto');
 const mysql = require("mysql");
 const login = require("./login");
 

@@ -1,4 +1,4 @@
-const crypto = require('../../utils/crypto');
+const crypto = require('../../utils/SkCrypto');
 const routerMapController = require('../routerMapController');
 const pwdKey = "a_d@aC712shh12";
 
