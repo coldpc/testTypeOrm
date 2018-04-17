@@ -1,0 +1,29 @@
+{
+    "type": "mysql",
+    "host": "rm-uf62110sw47boc9tg2o.mysql.rds.aliyuncs.com",
+    "port": 3306,
+    "username": "pccold",
+    "password": "WHQkey0825",
+    "database": "haoke",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+        "src/entity/**/*.ts"
+    ],
+    "migrations": [
+        "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+    },
+    "pool": {
+        "max": 10,
+        "min": 2,
+        "acquireTimeoutMillis": "10"
+    }
+}
